@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <head>
+      <h3>Simple tables and forms</h3>
+    </head>
+    <body>
+      <table border ="1">
+        <thead>
+          <tr>
+            <td colspan ="4">
+              <h1>Duty schedule</h1>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <td>
+            <h4> In charge: </h4>
+          </td>
+          <td>Vilis</td>
+          <td>Uga</td>
+          <td rowspan ="2">
+            <h2>Circulation</h2>
+            <table border ="3">
+              <tr>
+                <td>8:00</td>
+                <td>10:00</td>
+              </tr>
+              <tr>
+                <td>12:00</td>
+                <td>14:00</td>
+              </tr>
+            </table>
+            <tfoot>
+              <h4>2023</h4>
+            </tfoot>
+          </td>
+          <tr>
+            <td>
+              <h4>Date:</h4>
+            </td>
+            <td>
+              <h6>18.08.</h6>
+            </td>
+            <td>
+              <h6>19.08.</h6>
+            </td>
+          </tr> 
+      </tbody>
+      </table> 
+      </form>
+        <h1>User Registration Form</h1>
+        <form method="post" name="login">
+            <label>Username:</label><br />
+            <input type="text" name="username" required /><br />
+            <label>e-mail:</label><br />
+            <input type="email" name="email" required /><br />
+            <label>Password:</label><br />
+            <input type="password" name="password" required /><br />
+            <label>Please confirm:</label><br />
+            <input type="password_confirmation" name="password_con" required /><br />
+            <input type="submit" value="Login" />
+        </form>
+        <form>
+          <div>
+            <h2>Newsletter Signup Form</h2>
+            <p color="green">Sign up if you want to receive our news by e-mail!</p>
+          </div>
+          <div>
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="text" placeholder="email_address" name="mail" required>
+          </div>
+          <div>
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+        <form>
+          <h2>Newsletter Signup Form</h2>
+          <div>
+            <label for="name" id="label-name">
+              Name
+            </label>
+            <input type="text" id="name" placeholder="Enter your name" />
+          </div>
+          <div>
+            <label for="age" id="label-age">
+              Age
+            </label>
+            <input type="number" id="age" placeholder="Enter your age" />
+          </div>
+          <div>
+            <label for="role" id="label-role">
+              Which option best describes you?
+            </label>
+            <select name="role" id="role">
+              <option value="Encouragement">Encouragement needed</option>
+              <option value="intern">Confident</option>
+              <option value="professional">Professional</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label id="label-attendance">
+              Have you chosen a project partner?
+            </label>
+            <label for="partner-1" id="label-partner-1">
+              <input type="radio" id="attend-1" name="partner">Yes</input>
+            </label>
+            <label for="partner-2" id="label-partner-2">
+              <input type="radio" id="attend-2" name="nopartner">No</input>
+            </label>
+          </div>
+
+          <div>
+            <label>In which field you would like to work in the future?</label>
+            <br>
+            <label for="inp-1">
+              <input type="checkbox" name="inp">Education</input>
+            </label>
+            <br>
+            <label for="inp-2">
+              <input type="checkbox" name="inp">Commercial Environment</input>
+            </label>
+            <br>
+            <label for="inp-3">
+              <input type="checkbox" name="inp">Arts Industry</input>
+            </label>
+            <br>
+            <label for="inp-4">
+              <input type="checkbox" name="inp">Science</input>
+            </label>
+            <br>
+            <label for="inp-5">
+              <input type="checkbox" name="inp">Entertainment industry</input>
+            </label>
+            <br>
+            <label for="inp-6">
+              <input type="checkbox" name="inp">Other</input>
+            </label>
+          </div>
+
+        <div>
+            <label for="comment">
+              Any comments or suggestions:
+            </label>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here">
+                    </textarea>
+          </div>
+          <div>
+            <button type="submit" value="submit" id="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+        <div>
+          <h2>Contact Us Form</h2> 
+          <form>
+            <div>
+              <div>
+                <label for="fname">First Name</label>
+              </div>
+              <div>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+            <div>
+              <div>
+                <label for="lname">Last Name</label>
+              </div>
+              <div>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+            <div>
+              <div>
+                <label for="email_address">E-mail address</label>
+              </div>
+              <div>
+                <input type="text" id="email_address" name="E-mail" placeholder="Your E-mail address">
+              </div>
+            </div>
+            <div>
+              <div>
+                <label for="subject">Subject</label>
+              </div>
+              <div>
+                <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+        <div>
+          <br>
+          <h2>File Upload Form</h2> 
+            <form>
+              <input type="file" id="myFile" name="filename">
+              <input type="submit">
+            </form>
+        </div>
+</html>
